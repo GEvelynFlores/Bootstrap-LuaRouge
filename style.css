@@ -11,13 +11,175 @@ html{
 
 body{
     font-family:'Poppins', sans-serif;
-    background-color: #8770CB;
+    
 }
 
 main{
     padding: 0 100px;
 }
+
+/*barra de navegacion*/
+
 .bgnav{
-    background-color: #0d152a;
+    margin-bottom: 20px;
+    background-color: #0D152A;
+    font-family: 'Poppins', sans-serif !important;
+    
 }
+
+.navbar-brand{
+    content: url(/images/logoluarouge.png);
+    width: 110px;
+    
+}
+
+.nav-link{
+    color: #78B9E1 !important;
+    text-shadow: 0 0 2px #fff;
+    font-size: 20px;
+    
+    
+}
+
+
+
+/*seccion inicio*/
+
+.inicio{
+    background-image: url("../images/inicio.png"); 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #78B9E1;
+}
+
+a {
+    text-decoration: none;
+    color:#78B9E1;
+}
+
+h2{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(55,76,131,70%);
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+
+}
+
+.parrafo1{
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 18px;
+    background-color: rgba(135, 112, 203, 80%) ;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    
+}
+
+.parrafo2{
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 18px;
+    background-color: rgba(135, 112, 203, 80%);
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+
+}
+
+h3{
+    padding: 10px;
+    width: 100%;
+    font-size: 25px;
+    background-color:rgba(55, 76, 131, 70%) ;
+    text-align: center;
+    border-radius: 5px;
+    backdrop-filter: blur(2px);
+
+}
+.card{
+    margin: 5px;
+}
+.card-body{
+    margin: 10px;
+    background-color: rgba(135, 112, 203, 0.651) ;
+}
+
+.row{
+    padding: 10px;
+}
+
+
+footer{
+    width: 100%;
+    padding: 10px 100px ;
+    background-color:  #0D152A;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 20px;
+    text-align: center;
+    color: #78B9E1;
+}
+h4{
+    font-size: 18px;
+}
+
+.subir{
+    height: 50px;
+    width: 50px;
+    background-color: #4865ad;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+    border-radius: 50px;
+    display: grid;
+    place-content: center;
+
+}
+
+/**seccion sobremi*/
+
+.sobremi{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/sobremi.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*seccion libros*/
+
+.libros{
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/libros.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*seccion musica*/
+
+.musica{
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/musica.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*seccion contacto*/
+
+.contacto{
+    background-color: rgba(57, 96, 194, 0.692);
+}
+
+
+
 

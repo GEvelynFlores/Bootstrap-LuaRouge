@@ -19,36 +19,56 @@
     <!--Estilos-->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="/style.css">
 
     <title>Sobre Mi</title>
 </head>
 <body class="sobremi">
     <header>
         
-        <nav>
-            <div>
-            <img src="/images/logoluarouge.png" class="logo">
-           </div>
-           <input type="checkbox" id="check">
-             <label for="check" class="bar-btn">
-                <i class="fa-solid fa-bars"></i>
-             </label>
+        <!--inicia navbar-->
 
-            <ul class="nav-menu">                <!--Secciones-->
+        <nav class="navbar navbar-expand-md navbar-dark bgnav">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">Logo</a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/sobremi.html">Sobre Mi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/libros.html">Libros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/musica.html">Musica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+            
+        <!--finaliza navbar-->
 
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./sobremi.html">Sobre Mi</a></li>
-                <li><a href="./libros.html">Libros</a></li>
-                <li><a href="./musica.html">Música</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+
+     
     </header>
-    <main>           
-        <div class="portada2">
+           <main>           
+               <div class="portada2">
                   
-        </div>
+               </div>
         <section>
             <article>
                 <h2 class="caja"> <!--Titulo principal-->
@@ -70,18 +90,48 @@
             </article>
         </section>
 
-        <section>
-            <article>
-                <div class="container">
-                    <h3 class="seccion">Cuadros</h3>
-                    <div class="seccion-cuadros">
-                        <div class="items pint1"></div>
-                        <div class="items pint2"></div>
-                        <div class="items pint4"></div>
+                      <h3>Cuadros </h3>
+        <section class="tipos container-fluid">
+            <div class="row">
 
+                       <!--fotos de cuadros-->
+
+                <div class="card col-md-3">
+                    <img class="card-img-top" src="/images/cuadros.png" alt="cuadros">
+                    <div class="card-body">
+                      <h4 class="card-title">"Let your spirit soar"</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, similique!</p>
+                      <a href="#" class="btn btn-primary">Ver mas</a>
+                    </div>
                 </div>
-            </article>
-        </section>
+
+                <div class="card col-md-3">
+                    <img class="card-img-top" src="/images/cuadros2.png" alt="cuadros">
+                    <div class="card-body">
+                      <h4 class="card-title">"No bad days"</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, praesentium.</p>
+                      <a href="#" class="btn btn-primary">Ver mas</a>
+                    </div>
+                </div>
+
+                <div class="card col-md-3">
+                    <img class="card-img-top" src="/images/cuadros3.png" alt="cuadros">
+                    <div class="card-body">
+                      <h4 class="card-title">"Ash y Pikachu"</h4>
+                      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, iste?</p>
+                      <a href="#" class="btn btn-primary">Ver mas</a>
+                    </div>
+                </div>
+
+                <div class="card col-md-3">
+                    <img class="card-img-top" src="/images/cuadros4.png" alt="cuadros">
+                    <div class="card-body">
+                      <h4 class="card-title">"Bart y Homero leprosos"</h4>
+                      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, eaque?</p>
+                      <a href="#" class="btn btn-primary">Ver mas</a>
+                    </div>
+                </div>
+
     </main>
     <footer>             <!--Redes sociales-->
         

@@ -13,69 +13,89 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!--Estilos-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
     <title>Contenido</title>
 </head>
 <body class="libros">
     <header>
-        <nav>
-            <div>
-            <img src="/images/logoluarouge.png" class="logo">
-           </div>
-           <input type="checkbox" id="check">
-             <label for="check" class="bar-btn">
-                <i class="fa-solid fa-bars"></i>
-             </label>
+        
+        <!--Inicia navbar -->
 
-            <ul class="nav-menu">                <!--Secciones-->
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./sobremi.html">Sobre Mi</a></li>
-                <li><a href="./libros.html">Libros</a></li>
-                <li><a href="./musica.html">Música</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-        <main>
-            <section>
-                <article>
-                    
-                </article>
-            </section>
+     <nav class="navbar navbar-expand-md navbar-dark bgnav">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Logo</a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/sobremi.html">Sobre Mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/libros.html">Libros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/musica.html">Musica</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- finaliza navbar-->
+    <main>
+           <h3>Libros y pdf's</h3>
+    <section class="tipos container-fluid">
+        <div class="row">
+
+                   <!--libros y pdfs-->
+
+            <div class="card col-md-3">
+                <img class="card-img-top" src="/images/bookone.png" alt="libros">
+                <div class="card-body">
+                  <h4 class="card-title">"Sueños que guían"</h4>
+                  <p class="card-text">Un sueño es una manifestación de imágenes y a veces sonidos que muestraninterrelaciones comunes y no comunes. Es un espejo que refleja algún aspecto de la vida o el inconsciente, un escenario para ensayar posibilidades de expresión externas, una ventana de oportunidad para el auto conocimiento.</p>
+                  <a href="#" class="btn btn-primary">Leer</a>
+                </div>
+            </div>
+
+            <div class="card col-md-3">
+                <img class="card-img-top" src="/images/booktwo.png" alt="libros">
+                <div class="card-body">
+                  <h4 class="card-title">"Ley de Atraccion"</h4>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, officiis. Consequuntur, provident dolorem eaque corporis at pariatur ipsum hic nesciunt repellendus fuga.</p>
+                  <a href="#" class="btn btn-primary">Leer</a>
+                </div>
+            </div>
+
+            <div class="card col-md-3">
+                <img class="card-img-top" src="/images/bookthree.png" alt="libros">
+                <div class="card-body">
+                  <h4 class="card-title">"Como leer los registros Akasicos</h4>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, officiis. Consequuntur, provident dolorem eaque corporis at pariatur ipsum hic nesciunt repellendus fuga.</p>
+                  <a href="#" class="btn btn-primary">Leer</a>
+                </div>
+            </div>
+
+            <div class="card col-md-3">
+                <img class="card-img-top" src="/images/bookfour.png" alt="libros">
+                <div class="card-body">
+                  <h4 class="card-title">"Ocultismo Practico"</h4>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, officiis. Consequuntur, provident dolorem eaque corporis at pariatur ipsum hic nesciunt repellendus fuga.</p>
+                  <a href="#" class="btn btn-primary">Leer</a>
+                </div>
+            </div>
             
-            <section>
-                <article>
-                    <div class="container">
-                        <h3 class="seccion">-Sección de libros gratis-</h3>
-                    <div class="seccion-libros">                      
-                         <div class="item book1"></div>
-                            <!--<div><p class="prologo">“Un sueño es una manifestación de imágenes y a veces sonidos que muestraninterrelaciones comunes y no comunes. Es un espejo que refleja algún aspecto de la vida o el inconsciente, un escenario para ensayar posibilidades de expresión externas, una ventana de oportunidad para el auto conocimiento.”</p></div> -->
-                         
-                         <div class="item book2">
-                            <!--<p class="prologo">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quia pariatur magni fugiat quidem qui, vitae accusamus, nobis placeat facere consequatur libero ullam sint! Voluptate velit dolore voluptatem nisi provident.
-                            </p>-->
-                         </div>
-                         <div class="item book3"></div>
-                         <!--<p class="prologo">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, cumque nostrum totam exercitationem voluptate sunt labore magnam placeat veritatis vitae asperiores, id porro quas dolores repellendus! Quisquam obcaecati iste doloremque.
-                         </p>-->
-
-                         <div class="item book4"></div>
-                         <!--<p class="prologo">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, porro non? Velit, distinctio saepe molestias est cumque nostrum debitis ipsam impedit laborum tempore labore corrupti repellendus, provident totam vitae maxime.
-
-                         </p>-->
-
-                         <div class="item book5"> Portada de libro</div>
-
-                         <div class="item book6">Portada de libro</div>
-                    </div>
-                        
-                    </div>
-    
-                </article>
-            </section>
         </main>
 <footer>                  <!--Redes sociales-->
     
