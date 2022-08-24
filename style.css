@@ -106,17 +106,23 @@ h3{
 }
 .card{
     margin: 5px;
+    transition-delay: 5ms;
+    transition-duration: 10ms;
 }
 .card-body{
     margin: 10px;
-    background-color: rgba(135, 112, 203, 0.651) ;
+    background-color: rgba(135, 112, 203, 0.651);
+
 }
 
 .row{
     padding: 10px;
+    
 }
 
-
+.tipos.container-fluid{
+    text-align: center;
+}
 footer{
     width: 100%;
     padding: 10px 100px ;
