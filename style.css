@@ -69,6 +69,7 @@ h2{
     background-color: rgba(55,76,131,70%);
     border-radius: 10px;
     backdrop-filter: blur(2px);
+    text-shadow: 0 0 5px #fff;
 
 }
 
@@ -102,27 +103,29 @@ h3{
     text-align: center;
     border-radius: 5px;
     backdrop-filter: blur(2px);
+    text-shadow: 0 0 5px #fff;
+
 
 }
 .card{
     margin: 5px;
     transition-delay: 5ms;
     transition-duration: 10ms;
+    
 }
 .card-body{
-    margin: 10px;
     background-color: rgba(135, 112, 203, 0.651);
+    
 
 }
 
 .row{
-    padding: 10px;
-    
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: space-around;
 }
 
-.tipos.container-fluid{
-    text-align: center;
-}
+
 footer{
     width: 100%;
     padding: 10px 100px ;
@@ -184,9 +187,51 @@ h4{
 /*seccion contacto*/
 
 .contacto{
-    background-color: rgba(57, 96, 194, 0.692);
+    background-color: rgba(98, 57, 194, 0.692);
+}
+
+.btn-primary{
+    border-radius: 5px;
+    background-color: #4865ad;
+    border-color: rgba(98, 57, 194, 0.692);
+    
+
+}
+
+/**========Seccion de contacto=======*/
+
+.contacto{
+    text-align: center;
 }
 
 
+.formulario{
+         padding: 10px;
+         text-align: center;
+         letter-spacing: 1px;
+}
 
+.opciones{
+       font-size: medium;
+}
+
+.information{
+         padding: 10px;
+         margin: 10px;
+         text-align: center;
+         border-radius: 10px;
+         background-color:#374d83ab
+}
+
+.texto{
+  padding: 10px;
+  margin: 10px;
+  resize: none;
+  font-size: large;
+}
+
+.boton{
+    padding: 5px;
+    font-size: medium;
+}
 
