@@ -28,7 +28,7 @@ main{
 }
 
 .navbar-brand{
-    content: url(/images/logoluarouge.png);
+    content: url(./images/logoluarouge.png);
     width: 110px;
     
 }
