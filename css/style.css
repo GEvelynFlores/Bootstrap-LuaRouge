@@ -28,7 +28,7 @@ main{
 }
 
 .navbar-brand{
-    content: url(./images/logoluarouge.png);
+    content: url("../images/logoluarouge.png");
     width: 110px;
     
 }
@@ -169,7 +169,7 @@ h4{
 .libros{
     width: 100%;
     height: 100vh;
-    background-image: url("images/libros.png");
+    background-image: url("../images/libros.png");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -179,7 +179,7 @@ h4{
 .musica{
     width: 100%;
     height: 100vh;
-    background-image: url("images/musica.png");
+    background-image: url("../images/musica.png");
     background-size: cover;
     background-attachment: fixed;
 }
