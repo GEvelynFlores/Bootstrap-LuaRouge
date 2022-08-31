@@ -1,0 +1,246 @@
+$color1: #0D152A;
+$color2: #78B9E1;
+$color3: #fff;
+$color4: rgba(55,76,131,70%);
+$color5: rgba(135, 112, 203, 80%);
+$color6: #4865ad;
+$color7: rgba(98, 57, 194, 0.692);
+$color8: #374d83ab;
+$font1: 'Poppins', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:$font1;
+    
+}
+
+main{
+    padding: 0 50px;
+}
+
+/*barra de navegacion*/
+
+.bgnav{
+    margin-bottom: 20px;
+    background-color: $color1;
+    font-family: $font1 !important;
+    
+}
+
+.navbar-brand{
+    content: url("../images/logoluarouge.png");
+    width: 110px;
+    
+}
+
+.nav-link{
+    color: $color2 !important;
+    text-shadow: 0 0 2px $color3;
+    font-size: 20px;
+    
+    
+}
+
+
+
+/*seccion inicio*/
+
+.inicio{
+    background-image: url("../images/inicio.png"); 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: $color2;
+}
+
+a {
+    text-decoration: none;
+    color: $color2;
+}
+
+h2{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    background-color: $color4;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    text-shadow: 0 0 5px $color3;
+
+}
+
+.parrafo1{
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 18px;
+    background-color: $color5;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    
+}
+
+.parrafo2{
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 18px;
+    background-color: $color5;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+
+}
+
+h3{
+    padding: 10px;
+    width: 100%;
+    font-size: 25px;
+    background-color: $color4 ;
+    text-align: center;
+    border-radius: 5px;
+    backdrop-filter: blur(2px);
+    text-shadow: 0 0 5px $color3;
+
+
+}
+.card{
+    margin: 5px;
+    transition-delay: 5ms;
+    transition-duration: 10ms;
+    
+}
+.card-body{
+    background-color: $color5;
+    
+
+}
+
+.row{
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: space-around;
+}
+
+
+footer{
+    width: 100%;
+    padding: 10px 100px ;
+    background-color:  $color1;
+    font-family:$font1 !important;
+    font-size: 20px;
+    text-align: center;
+    color: $color2;
+}
+h4{
+    font-size: 18px;
+}
+
+.subir{
+    height: 50px;
+    width: 50px;
+    background-color: $color6;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+    border-radius: 50px;
+    display: grid;
+    place-content: center;
+
+}
+
+/**seccion sobremi*/
+
+.sobremi{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/sobremi.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/*seccion libros*/
+
+.libros{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/libros.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*seccion musica*/
+
+.musica{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/musica.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*seccion contacto*/
+
+.contacto{
+    background-color: $color7;
+}
+
+.btn-primary{
+    border-radius: 5px;
+    background-color: $color6;
+    border-color: $color7;
+    
+
+}
+
+/**========Seccion de contacto=======*/
+
+.contacto{
+    text-align: center;
+}
+
+
+.formulario{
+        padding: 10px;
+        text-align: center;
+        letter-spacing: 1px;
+}
+
+.opciones{
+        font-size: medium;
+}
+
+.information{
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: $color8;
+}
+
+.texto{
+    padding: 10px;
+    margin: 10px;
+    resize: none;
+    font-size: large;
+}
+
+.boton{
+    padding: 5px;
+    font-size: medium;
+}

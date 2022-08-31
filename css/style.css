@@ -206,32 +206,31 @@ h4{
 
 
 .formulario{
-         padding: 10px;
-         text-align: center;
-         letter-spacing: 1px;
+        padding: 10px;
+        text-align: center;
+        letter-spacing: 1px;
 }
 
 .opciones{
-       font-size: medium;
+        font-size: medium;
 }
 
 .information{
-         padding: 10px;
-         margin: 10px;
-         text-align: center;
-         border-radius: 10px;
-         background-color:#374d83ab
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        border-radius: 10px;
+        background-color:#374d83ab
 }
 
 .texto{
-  padding: 10px;
-  margin: 10px;
-  resize: none;
-  font-size: large;
+    padding: 10px;
+    margin: 10px;
+    resize: none;
+    font-size: large;
 }
 
 .boton{
     padding: 5px;
     font-size: medium;
 }
-
