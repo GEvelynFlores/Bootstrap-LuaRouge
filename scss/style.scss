@@ -8,6 +8,17 @@ $color7: rgba(98, 57, 194, 0.692);
 $color8: #374d83ab;
 $font1: 'Poppins', sans-serif;
 
+            /*variables*/
+@mixin reset-hp{ 
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+@mixin reset-wh{
+    width: 100%;
+    height: 100vh;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -34,7 +45,6 @@ main{
     margin-bottom: 20px;
     background-color: $color1;
     font-family: $font1 !important;
-    
 }
 
 .navbar-brand{
@@ -50,8 +60,6 @@ main{
     
     
 }
-
-
 
 /*seccion inicio*/
 
@@ -71,8 +79,7 @@ a {
 }
 
 h2{
-    padding: 10px;
-    margin-bottom: 10px;
+    @include reset-hp();
     width: 100%;
     text-align: center;
     font-size: 25px;
@@ -80,33 +87,27 @@ h2{
     border-radius: 10px;
     backdrop-filter: blur(2px);
     text-shadow: 0 0 5px $color3;
+    
 
 }
 
 .parrafo1{
-    padding: 20px;
-    margin-bottom: 10px;
+    @include reset-hp();
     width: 100%;
     font-size: 18px;
     background-color: $color5;
     border-radius: 10px;
     backdrop-filter: blur(2px);
-    
+    text-align: center;
 }
 
 .parrafo2{
-    padding: 20px;
-    margin-bottom: 10px;
-    width: 100%;
-    font-size: 18px;
-    background-color: $color5;
-    border-radius: 10px;
-    backdrop-filter: blur(2px);
-
+    @include reset-hp();
+    @extend .parrafo1
 }
 
 h3{
-    padding: 10px;
+    @include reset-hp();
     width: 100%;
     font-size: 25px;
     background-color: $color4 ;
@@ -138,7 +139,7 @@ h3{
 
 footer{
     width: 100%;
-    padding: 10px 100px ;
+    padding: 30px 100px ;
     background-color:  $color1;
     font-family:$font1 !important;
     font-size: 20px;
@@ -146,7 +147,8 @@ footer{
     color: $color2;
 }
 h4{
-    font-size: 18px;
+    font-size: 20px;
+    
 }
 
 .subir{
@@ -163,11 +165,13 @@ h4{
 
 }
 
+.redes{
+    font-size: larger;
+}
 /**seccion sobremi*/
 
 .sobremi{
-    width: 100%;
-    height: 100vh;
+    @include reset-wh();
     background-image: url("../images/sobremi.png");
     background-size: cover;
     background-attachment: fixed;
@@ -177,8 +181,7 @@ h4{
 /*seccion libros*/
 
 .libros{
-    width: 100%;
-    height: 100vh;
+    @include reset-wh();
     background-image: url("../images/libros.png");
     background-size: cover;
     background-attachment: fixed;
@@ -187,33 +190,24 @@ h4{
 /*seccion musica*/
 
 .musica{
-    width: 100%;
-    height: 100vh;
+    @include reset-wh();
     background-image: url("../images/musica.png");
     background-size: cover;
     background-attachment: fixed;
 }
 
-/*seccion contacto*/
+            /*Seccion contacto*/
 
 .contacto{
     background-color: $color7;
+    text-align: center;
 }
 
 .btn-primary{
     border-radius: 5px;
     background-color: $color6;
     border-color: $color7;
-    
-
 }
-
-/**========Seccion de contacto=======*/
-
-.contacto{
-    text-align: center;
-}
-
 
 .formulario{
         padding: 10px;
