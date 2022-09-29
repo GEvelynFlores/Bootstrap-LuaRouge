@@ -11,29 +11,85 @@ html {
 body {
   font-family: "Poppins", sans-serif; }
 
-main {
-  padding: 0 50px; }
-
 /*barra de navegacion*/
 .bgnav {
-  margin-bottom: 20px;
-  background-color: #0D152A;
+  background-color: #0d152a;
   font-family: "Poppins", sans-serif !important; }
+
+.navbar {
+  justify-content: space-between; }
 
 .navbar-brand {
   content: url("../images/logoluarouge.png");
   width: 110px; }
 
+.navbar-collapse {
+  flex-grow: unset; }
+
 .nav-link {
   color: #78B9E1 !important;
-  text-shadow: 0 0 2px #fff;
+  text-shadow: 0 0 3px #fff;
   font-size: 20px; }
 
-/*seccion inicio*/
-.inicio {
-  background-image: url("../images/inicio.png");
+/*SECCION INICI0*/
+/*BANNER*/
+#banner {
+  padding: 0 50px;
+  height: 80vh;
   background-size: cover;
-  background-attachment: fixed; }
+  background-position: center;
+  background-image: url(/images/inicio.png); }
+
+#banner::before {
+  content: "";
+  background: rgba(77, 77, 92, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  left: 0; }
+
+.contenido-banner {
+  position: relative;
+  color: rgba(0, 0, 0, 0.959);
+  text-shadow: 0 0 3px #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.contenido-banner h2 {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 10px 0; }
+
+.contenido-banner h2 span {
+  font-weight: 600; }
+
+.cita {
+  font-size: 25px; }
+
+.boton-comenzar {
+  text-decoration: none;
+  text-shadow: none;
+  color: #fff;
+  border: 2px solid #4865ad;
+  padding: 20px 40px;
+  align-self: baseline;
+  transition: all 0.4s; }
+
+.boton-comenzar:hover {
+  background: rgba(63, 83, 133, 0.767); }
+
+/*FIN BANNER*/
+.contenido1 {
+  width: 100%;
+  background-color: #4865ad;
+  justify-content: center; }
+
+.tipos {
+  justify-content: center;
+  padding: 10px; }
 
 h1 {
   color: #78B9E1; }
@@ -44,57 +100,74 @@ a {
 
 h2 {
   padding: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   width: 100%;
   text-align: center;
   font-size: 25px;
-  background-color: #374c83;
-  border-radius: 10px;
-  backdrop-filter: blur(2px);
-  text-shadow: 0 0 5px #fff; }
+  border-radius: 10px; }
 
 .parrafo1, .parrafo2 {
   padding: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   width: 100%;
   font-size: 18px;
-  background-color: #8770cb;
   border-radius: 10px;
-  backdrop-filter: blur(2px);
   text-align: center; }
+
+.parrafo-div {
+  padding: 20px;
+  margin-bottom: 0;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start; }
+
+.therapy {
+  width: 50%;
+  margin: 10px;
+  background-position: left;
+  background-size: cover; }
+
+section {
+  background-color: #4865ad;
+  margin-bottom: 0;
+  padding: 10px 10px; }
 
 .parrafo2 {
   padding: 20px;
-  margin-bottom: 10px; }
+  margin-bottom: 0; }
 
 h3 {
   padding: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   width: 100%;
   font-size: 25px;
-  background-color: #374c83;
   text-align: center;
-  border-radius: 5px;
-  backdrop-filter: blur(2px);
-  text-shadow: 0 0 5px #fff; }
+  border-radius: 5px; }
 
 .card {
+  width: 300px;
   margin: 5px;
+  margin-bottom: 10px;
   transition-delay: 5ms;
-  transition-duration: 10ms; }
+  transition-duration: 10ms;
+  font-size: larger; }
 
 .card-body {
-  background-color: #8770cb; }
+  background-color: rgba(135, 112, 203, 0.884); }
 
 .row {
   width: 100%;
   margin-bottom: 10px;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin: 0;
+  padding: 15px; }
 
 footer {
   width: 100%;
   padding: 30px 100px;
-  background-color: #0D152A;
+  background-color: #0d152a;
   font-family: "Poppins", sans-serif !important;
   font-size: 20px;
   text-align: center;
@@ -126,28 +199,92 @@ h4 {
   background-size: cover;
   background-attachment: fixed; }
 
-/*seccion libros*/
-.libros {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../images/libros.png");
+.banner2 {
+  padding: 0 50px;
+  height: 80vh;
   background-size: cover;
-  background-attachment: fixed; }
+  background-position: center;
+  background-image: url(/images/sobremi.png); }
+
+.banner2::before {
+  content: "";
+  background: rgba(77, 77, 92, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  left: 0; }
+
+.contenido-banner2 {
+  position: relative;
+  color: rgba(0, 0, 0, 0.959);
+  text-shadow: 0 0 3px #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.contenido-banner2 h2 {
+  font-size: 40px;
+  font-weight: 400;
+  padding: 10px 0; }
+
+.contenido-banner2 h2 span {
+  font-weight: 600; }
+
+/*seccion libros*/
+.banner3 {
+  padding: 0 50px;
+  background-image: url(/images/libros.png);
+  height: 80vh;
+  background-size: cover;
+  background-position: center; }
+
+.banner3::before {
+  content: "";
+  background: rgba(77, 77, 92, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  left: 0; }
+
+.contenido-banner3 {
+  position: relative;
+  color: rgba(0, 0, 0, 0.959);
+  text-shadow: 0 0 4px #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.contenido-banner3 h2 {
+  font-size: 40px;
+  font-weight: 400;
+  padding: 10px 0; }
+
+.contenido-banner3 h2 span {
+  font-weight: 600; }
 
 /*seccion musica*/
 .musica {
   width: 100%;
   height: 100vh;
-  background-image: url("../images/musica.png");
-  background-size: cover;
+  background-image: url("../images/musique.png");
+  background-size: contain;
   background-attachment: fixed; }
 
 /*Seccion contacto*/
 .contacto {
-  background-color: rgba(98, 57, 194, 0.692);
+  background-image: url(/images/contact.png);
+  background-size: cover;
   text-align: center; }
 
+.cajacontacto {
+  background-size: contain; }
+
 .btn-primary {
+  padding: 5px;
   border-radius: 5px;
   background-color: #4865ad;
   border-color: rgba(98, 57, 194, 0.692); }
@@ -155,24 +292,57 @@ h4 {
 .formulario {
   padding: 10px;
   text-align: center;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  background-color: rgba(72, 101, 173, 0.575);
+  width: 450px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px; }
+
+.space {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: none; }
 
 .opciones {
-  font-size: medium; }
+  padding: 7px;
+  font-size: medium;
+  border-radius: 10px; }
 
 .information {
   padding: 10px;
   margin: 10px;
   text-align: center;
-  border-radius: 10px;
-  background-color: #374d83ab; }
+  border-radius: 10px; }
 
 .texto {
+  width: 100%;
   padding: 10px;
   margin: 10px;
   resize: none;
-  font-size: large; }
+  font-size: medium;
+  border-radius: 10px; }
 
 .boton {
   padding: 5px;
   font-size: medium; }
+
+/*MEDIA QUERIES*/
+@media (max-width: 480px) {
+  .formulario {
+    width: 100%; } }
+
+@media (max-width: 480px) {
+  .contenido-banner h2 {
+    width: 100%;
+    font-size: 18px; }
+  .contenido-banner3 {
+    width: 100%;
+    font-size: 18px; }
+  .cita {
+    width: 100%;
+    font-size: 18px; } }
